@@ -1,0 +1,10 @@
+<div *ngIf="certificate" [ngClass]="{blueborder: certificate.rooms > 0}">
+  <h2>{{ certificate.name }} Details</h2>
+  <div>ID: {{certificate.id}}</div>
+  <div [ngStyle]="{'background-color': setColor()}">ROOMS: {{certificate.room}}</div>
+  <div>
+     <label for="cname">Name: </label>
+     <input [(ngModel)]="certificate.name" placeholder="certificate name" id="cname">
+  </div>
+  <button (click)="goBack()">BACK</button>
+</div>

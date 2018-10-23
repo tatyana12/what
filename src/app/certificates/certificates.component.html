@@ -1,0 +1,8 @@
+<h2>CNIT Certificates for Web Dev</h2>
+<ul class="certificates">
+  <li *ngFor="let certificate of certificates">
+    <a routerLink="/detail/{{certificate.id}}">
+      <span class="certid">{{certificate.id}}</span> {{certificate.name}}
+    </a>  
+  </li>
+</ul>
