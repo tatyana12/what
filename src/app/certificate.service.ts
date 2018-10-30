@@ -12,7 +12,7 @@ export class CertificateService {
   constructor(private messageService: MessageService) { }
 
   getCertificates(): Observable<Certificate[]> {
-    this.messageService.add('CertificateService: certificates fetched');
+    this.messageService.add('Workshops/seminars: workshops/seminars fetched');
     return of(Certificates);
   }
 
