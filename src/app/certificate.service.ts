@@ -17,7 +17,7 @@ export class CertificateService {
   }
 
   getCertificate(id: number): Observable<Certificate> {
-    this.messageService.add(`CertificateService: certificate id=${id} fetched`);
+    this.messageService.add(`Workshop/Seminar: workshop/seminar id=${id} fetched`);
     return of(Certificates.find(certificate => certificate.id === id));
   }
 }
